@@ -166,8 +166,8 @@ void draw() {
               int otherenemyX=enemyX1+i*enemyspacingX;
               image(enemyImg,otherenemyX,enemyY1);             
               }
-              enemyX1+=2;
-              enemyX1%=640*5-140;
+              enemyX1+=4;
+              enemyX1%=640*5-100;
               if(enemyX1>width+350){ 
                 enemyY1=floor(random(30,400));
               } 
@@ -178,8 +178,8 @@ void draw() {
               int otherenemyY=enemyY2+i*enemyspacingY;
               image(enemyImg,otherenemyX,otherenemyY);             
               }
-              enemyX2+=2;
-              enemyX2%=640*5-140;
+              enemyX2+=4;
+              enemyX2%=640*5-100;
               if(enemyX2>width+350){ 
                 enemyY2=floor(random(30,200));
               } 
@@ -201,38 +201,14 @@ void draw() {
                 }
                  
               }
-              enemyX3+=2;
-              enemyX3%=640*5-140;
+              enemyX3+=4;
+              enemyX3%=640*5-100;
               if(enemyX3>width+350){ 
                 enemyY3=floor(random(200,300));
               } 
+
               
-               
-              
-              
-              
-              
-              //life
-              if(x>=enemyX1 && x-enemyX1<=45 && y>=enemyY1 && y-enemyY1<=45){
-               hpX=hpX-40;
-               enemyX1=0;
-               enemyY1=floor(random(30,400));
-              }
-              if(x>=enemyX1 && x-enemyX1<=45 && y<=enemyY1 && enemyY1-y<=45){
-                hpX=hpX-40;
-                   enemyX1=0;
-                enemyY1=floor(random(30,400));
-              }
-               if(enemyX1>=x && enemyX1-x<=45 && y>=enemyY1 && y-enemyY1<=45){
-                 hpX=hpX-40;
-                 enemyX1=0;
-                 enemyY1=floor(random(30,400));
-              }
-               if(enemyX1>=x && enemyX1-x<=45 && y<=enemyY1 && enemyY1-y<=45){
-                 hpX=hpX-40;
-                 enemyX1=0;
-               enemyY1=floor(random(30,400));
-              }
+             
                
             //gameOver
             
